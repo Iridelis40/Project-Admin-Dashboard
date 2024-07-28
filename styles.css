@@ -14,7 +14,8 @@ body {
 
 nav {
     background-color: #3730a3;
-    width: 15rem;
+    min-width: 14rem;
+    max-width: 14rem;
     height: 100vh;
     color: white;
 }
@@ -28,7 +29,7 @@ nav {
     padding-left: 1rem;
 }
 #logo img {
-    height: 50%
+    height: 50%;
 }
 #navMenu {
     display: flex;
@@ -45,4 +46,94 @@ nav {
 #navMenu a img {
     height: 1rem;
     padding-right: 0.5rem;
+}
+
+main {
+    min-height: 100vh;
+    background-color: aqua;
+    flex-grow: 1;
+}
+header {
+    background-color: white;
+    height: 10rem;
+    box-shadow: grey 3px 3px 10px;
+}
+.header {
+    height: 50%;
+}
+.one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.one button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.searchDiv, .profileDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.profileDiv #propic {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+.searchDiv {
+    flex-grow: 1;
+}
+.profileDiv {
+    padding-left: 2rem;
+    font-weight: 500;
+}
+.searchDiv input {
+    height: 1.5rem;
+    width: 80%;
+    background-color: rgba(236, 233, 233, 0.801);
+    border: none;
+    border-radius: 20px;
+}
+
+.two {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+#greetings {
+ font-size: 0.5rem;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ padding-left: 2rem;
+ gap: 1rem;
+}
+#greetings img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+}
+#buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-right: 2rem;
+}
+#buttons button {
+    height: 2rem;
+    padding: 0.1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    background-color: #2563eb;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
 }
